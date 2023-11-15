@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Logo.jpeg" class="Logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="childhood.html">Childhood</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skills&talents.html">Skill&Talents</a></li>
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Contact</p>
+                    <h1>Found it <span>Interesting?</span><br> Find me...</h1>
+                   
+                    
+                </div>
+           <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact<span> me</span></h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>jess.jack.ndemo1@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0769817105</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your message" ></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="copyright">
+                <p>Copyright JJ.</p>
+            </div>
+           </div>
+
+           <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmeu(){
+                sidemenu.style.right = "0";
+            
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200";
+            }
+           </script>
+            </div>
+        </div>
+    </body>
+</html>
